@@ -7,7 +7,7 @@ import (
 	"strings"
 	"encoding/hex"
 	"io/ioutil"
-	"cloud-agent/zlog"
+	"github.com/CoiaPrant/zlog"
 	"os"
 	"os/exec"
 	"net/http"
