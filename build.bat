@@ -1,7 +1,7 @@
 @echo off
 set UserName=CoiaPrant
 set Name=cloud-agent
-set Version=1.0.0
+set Version=1.0.1
 
 echo %Version%>version
 
