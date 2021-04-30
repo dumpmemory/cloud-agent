@@ -21,6 +21,8 @@ import (
 	"time"
 )
 
+var version string
+
 type JSONConfig struct {
 	Time  int
 	API   string
@@ -86,6 +88,7 @@ func getInfo() {
 	jsonData, _ := json.Marshal(map[string]interface{}{
 		"Action": "GetInfo",
 		"Token":  md5_encode(conf.Token),
+		"Version": version,
 	})
 
 	code, info, err := sendRequest(conf.API, bytes.NewReader(jsonData), nil, "POST")
